@@ -15,14 +15,14 @@ const Modal = () => {
     return (
         <AlertDialog>
             <AlertDialogTrigger>
-                <Button className="bg-black text-white rounded-full px-8 tracking-wider">Abrir modal</Button>
+                <span className="bg-black text-white rounded-full px-8 tracking-wider">Abrir modal</span>
             </AlertDialogTrigger>
             <AlertDialogContent>
                     <AlertDialogCancel className="bg-[#D9D9D9] w-[28px] h-[28px] flex p-2 place-content-center rounded-full absolute top-4 right-8 cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
                     </AlertDialogCancel>
                 <ScrollArea className="w-full p-8 h-full max-h-[80vh] relative">
-                    <Image src="/TRANSPARENTE-CON-SOMBRA-800w1.png" alt="scooter" width={393} height={251} className="mx-12 w-9/12 md:w-full" />
+                    <Image src="/TRANSPARENTE-CON-SOMBRA-800w1.png" alt="scooter" width={393} height={251} className="w-9/12 mx-auto md:w-fit md:mx-12" />
                     <h1 className="text-3xl text-center font-extrabold leading-10 tracking-wide" style={{ textWrap: "balance" }}>¡Gana un scooter eléctrico Minca 800W GRATIS!</h1>
                     <form className="mt-4 mx-12">
                         <div className="flex flex-col space-y-4">
