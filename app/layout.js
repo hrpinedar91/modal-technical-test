@@ -1,4 +1,6 @@
 import { Manrope } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import { cn } from '@/lib/utils'
 import "./globals.css";
 
 const manrope = Manrope({ subsets: ["latin"] });
@@ -11,7 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={manrope.className}>{children}</body>
+      <body className={cn('relative h-full font-sans antialiased', manrope.className)}>
+        <main className="relative flex flex-col min-h-screen">
+        <Navbar></Navbar>
+           {children}
+        </main>
+      </body>
     </html>
   );
 }
